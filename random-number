@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h> //用到了time函数
+int main()
+{ int i,number;
+int MaxNum;
+printf("input the MaxNum\n");
+while(scanf("%d",&MaxNum)!=EOF)
+{
+
+srand((unsigned) time(NULL)); //用时间做种，每次产生随机数不一样
+//for (i=0; i<50; i++)
+//{
+number = rand() % MaxNum; //产生0-MaxNum的随机数
+printf("%d\n", number);
+//}
+}
+return 0;
+}
